@@ -1,18 +1,18 @@
 language: node_js
 
 node_js:
-  - "10"
+  - "lts/*"
 
 install:
   - git clone git@github.com:imdreamrunner/litst.git
   - cd litst
   - npm install
+  - npm run build
   - npm link
   -- cd ..
 
 script:
   - litst publish ./pages --output ./publish
-
 
 deploy:
   provider: pages
