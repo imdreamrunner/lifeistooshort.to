@@ -4,7 +4,7 @@ node_js:
   - "lts/*"
 
 install:
-  - git clone git@github.com:imdreamrunner/litst.git
+  - git clone https://github.com/imdreamrunner/litst.git
   - cd litst
   - npm install
   - npm run build
